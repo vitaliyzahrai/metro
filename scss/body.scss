@@ -10,6 +10,9 @@ h3{
 	color: #5d5d5d;
 }
 
+body{
+	background-color: #393a39;
+}
 
 .lock{
 		overflow: hidden;
@@ -82,6 +85,7 @@ h3{
 }
 
 .banner{
+	background-color: #ffffff;
 	.text{
 		margin: 180px auto 140px auto;
 		text-align: center;
@@ -123,6 +127,7 @@ h3{
 
 // sectinon main
 .main{
+	background-color: #ffffff;
 		.featured-post-img{
 			padding-right: 0;
 			padding-left: 0;
@@ -145,23 +150,58 @@ h3{
 		}
 
 		.title-post{
+			height: 243px;
 			h2{
 				margin-top: 0;
+				margin-bottom: 15px;
 				font-size: 30px;
 				color: #736c6c;
 			}
-			span{
-				font-size: 14px;
-				color: #c6c6c6;
+
+			.slider{
+				display: flex;
+				position: relative;
+				height: 110px;
+				top: -40px;
+				left: 0;
+				right: 0;
+				.span{
+					position: absolute;
+					font-size: 14px;
+					color: #c6c6c6;
+					text-align: justify;
+					display: none;
+				}
+				.curry{
+						display: block;
+					}
 			}
-			.arrow{
+			.prev{
 				background-color: #7c7d7c;
-				float: right;
-				width: 32px;
-    		margin-top: 26px;
-    		img{
-    			padding-left: 3px;
-    		}
+				position: relative;
+				top: 119px;
+				left: 10px;
+				width: 25px;
+				border-radius:5px;
+				cursor: pointer;
+					&:hover {
+										background-color: #ee1551;
+									}
+			}
+			.next{
+				background-color: #7c7d7c;
+				position: relative;
+				top: -16px;
+				left: 92%;
+				width: 25px;
+				border-radius:5px;
+				cursor: pointer;
+					&:hover {
+										background-color: #ee1551;
+									}
+				img{
+					padding-left: 15px;
+				}
 			}
 		}
 
@@ -200,6 +240,7 @@ h3{
 
 // section posts	
 .posts{	
+	background-color: #ffffff;
 	.post{
 		margin: 20px 0px;
 		h1{
@@ -216,7 +257,7 @@ h3{
 			font-family: "Raleway", sans-serif;
 			font-weight: 300;
 			font-size: 14px;
-			color: #c6c6c6;
+			color: #393a39ff;
 			text-align: justify;
 		}
 	}
@@ -239,6 +280,7 @@ h3{
 					color: #ffffff;
 					margin-top: 18px;
 					margin-block-end: auto;
+					padding-right: 8px;
 				}
 				span{
 					font-family: "Manjari", sans-serif;
@@ -680,7 +722,16 @@ footer{
 						width: 100%;
 					}
 				} 
+				.title-post{
+					.prev{
+						top: 169px;
+					}
+					.next{
+						top: 34px;
+					}
+				}
 				.ad1{
+					margin-top: 100px;
 					.ad1_block{
 						width: 100%;
 					}
@@ -738,6 +789,21 @@ footer{
 }
 
 @media screen and (max-width: 340px){
+
+	.main{
+		.title-post{
+			.prev{
+				top: 189px;
+			}
+			.next{
+				top: 54px;
+			}
+		}
+		.ad1{
+			margin-top: 130px;
+		}
+	}
+
 	.posts{
 		.ad2{
 			.circle{
