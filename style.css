@@ -100,17 +100,21 @@ body {
   font-weight: 300;
 }
 .banner .text button {
-  font-family: "Raleway", sans-serif;
-  font-size: 23px;
-  font-weight: 400;
-  color: #ffffff;
   background-color: #373737;
   padding: 13px 15px 13px 15px;
   width: 210px;
   border: none;
+  border-radius: 10px;
 }
 .banner .text button:active {
   background-color: #ee1551;
+}
+.banner .text button a {
+  font-family: "Raleway", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
 }
 .banner .text button img {
   margin-bottom: 3px;
@@ -696,4 +700,28 @@ footer .footer_loc i:active {
   .posts .ad2 .circle {
     margin-left: 75px;
   }
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: url("D:/FrontEnd/Project/Metro/fonts/Raleway/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  src: url("D:/FrontEnd/Project/Metro/fonts/Raleway/Raleway-Light.ttf");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  src: url("D:/FrontEnd/Project/Metro/fonts/Raleway/Raleway-Bold.ttf");
+}
+@font-face {
+  font-family: "Manjari";
+  font-style: normal;
+  font-weight: 400;
+  src: url("D:/FrontEnd/Project/Metro/fonts/Manjari/Manjari-Regular.ttf");
 }
